@@ -31,6 +31,7 @@ public class Carro {
         }
     }
     //converte o objeto para uma String
+    @Override
     public String toString(){
         return "Marca: " + this.marca + "Modelo: " + this.modelo +
                 "Cor: " + this.cor + "Ano: " + this.ano + "Velocidade: " + this.velAtual;
