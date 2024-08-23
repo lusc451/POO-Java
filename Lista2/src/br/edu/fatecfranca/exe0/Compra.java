@@ -42,4 +42,24 @@ public class Compra {
             this.situacao = "Reprovado";
         }
     }
+
+    //getters
+    public float getValor() {
+        return valor;
+    }
+    public int getQtd() {
+        return qtd;
+    }
+    public String getSituacao() {
+        return situacao;
+    }
+
+    @Override
+    public String toString() {
+        return "Compra{" +
+                "valor=" + valor +
+                ", qtd=" + qtd +
+                ", situacao='" + situacao + '\'' +
+                '}';
+    }
 }
