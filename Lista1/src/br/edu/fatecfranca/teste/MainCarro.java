@@ -1,10 +1,9 @@
 package br.edu.fatecfranca.teste;
 
 import br.edu.fatecfranca.Carro;
-
 import javax.swing.*;
 
-public class Main {
+public class MainCarro {
     public static void main(String[] args) {
         // instancia os objetos da classe Carro
         Carro obj1 = new Carro("Toyota", "Corolla", "Cinza", 2018, 0);
