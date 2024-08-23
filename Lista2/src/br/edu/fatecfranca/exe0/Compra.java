@@ -9,9 +9,9 @@ public class Compra {
     }
 
     public Compra(float valor, int qtd, String situacao) {
-        this.valor = valor;
-        this.qtd = qtd;
-        this.situacao = situacao;
+        this.setValor(valor);
+        this.setQtd(qtd);
+        this.setSituacao(situacao);
     }
 
     public void setValor(float valor) {
