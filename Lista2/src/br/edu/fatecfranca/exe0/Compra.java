@@ -33,4 +33,13 @@ public class Compra {
             this.qtd = 0;
         }
     }
+    public void setSituacao(String situacao) {
+        if(situacao.equals("Aprovado") || situacao.equals("Reprovado") || situacao.equals("Pendente")){
+            this.situacao = situacao;
+        }
+        else {
+            System.out.println("Situação inválida");
+            this.situacao = "Reprovado";
+        }
+    }
 }
