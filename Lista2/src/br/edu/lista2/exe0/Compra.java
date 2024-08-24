@@ -1,4 +1,4 @@
-package br.edu.fatecfranca.exe0;
+package br.edu.lista2.exe0;
 
 public class Compra {
     private float valor;

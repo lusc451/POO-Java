@@ -1,5 +1,5 @@
-package br.edu.fatecfranca.teste;
-import br.edu.fatecfranca.exe0.Compra;
+package br.edu.lista2.teste;
+import br.edu.lista2.exe0.Compra;
 
 public class MainCompra {
     public static void main(String[] args) {
