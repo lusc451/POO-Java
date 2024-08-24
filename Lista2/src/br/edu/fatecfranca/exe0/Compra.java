@@ -2,20 +2,19 @@ package br.edu.fatecfranca.exe0;
 
 public class Compra {
     private float valor;
-    private int qtd;
+    private int qtde;
     private String situacao;
 
     public Compra() {
     }
 
-    public Compra(float valor, int qtd, String situacao) {
+    public Compra(float valor, int qtde, String situacao) {
         this.setValor(valor);
-        this.setQtd(qtd);
+        this.setQtde(qtde);
         this.setSituacao(situacao);
     }
-
     public void setValor(float valor) {
-        if(valor >= 0){
+        if (valor >= 0){
             this.valor = valor;
         }
         else {
@@ -23,18 +22,19 @@ public class Compra {
             this.valor = 0;
         }
     }
-
-    public void setQtd(int qtd) {
-        if(qtd >= 0){
-            this.qtd = qtd;
+    public void setQtde(int qtde) {
+        if (qtde >= 0){
+            this.qtde = qtde;
         }
         else {
-            System.out.println("Quantidade inválida");
-            this.qtd = 0;
+            System.out.println("Qtde inválida");
+            this.qtde = 0;
         }
     }
     public void setSituacao(String situacao) {
-        if(situacao.equals("Aprovado") || situacao.equals("Reprovado") || situacao.equals("Pendente")){
+        if (situacao.equals( "Aprovado") ||
+                situacao.equals( "Reprovado") ||
+                situacao.equals("Pendente")) {
             this.situacao = situacao;
         }
         else {
@@ -42,23 +42,21 @@ public class Compra {
             this.situacao = "Reprovado";
         }
     }
-
     //getters
     public float getValor() {
         return valor;
     }
-    public int getQtd() {
-        return qtd;
+    public float getQtde() {
+        return qtde;
     }
     public String getSituacao() {
         return situacao;
     }
-
     @Override
     public String toString() {
         return "Compra{" +
                 "valor=" + valor +
-                ", qtd=" + qtd +
+                ", qtde=" + qtde +
                 ", situacao='" + situacao + '\'' +
                 '}';
     }
