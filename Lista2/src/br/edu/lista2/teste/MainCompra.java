@@ -4,7 +4,7 @@ import br.edu.lista2.exe0.Compra;
 public class MainCompra {
     public static void main(String[] args) {
 
-        Compra obj1 = new Compra(200, 2, "Aprovado");
+        Compra obj1 = new Compra(200, 2, "Aprovada");
         System.out.println(obj1);
 
         Compra obj2 = new Compra();
