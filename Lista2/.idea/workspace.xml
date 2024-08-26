@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88678002-080e-4b12-b919-c50d59e0cd9e" name="Changes" comment="" />
+    <list default="true" id="88678002-080e-4b12-b919-c50d59e0cd9e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,8 +40,9 @@
     "Application.MainCompra.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/cleit/OneDrive - Fatec Centro Paula Souza/4º SEM/POO/POO-Java",
+    "last_opened_file_path": "C:/Users/Pref Sales Oliveira/OneDrive - Fatec Centro Paula Souza/4º SEM/POO",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +51,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -69,6 +73,8 @@
       <updated>1724524894645</updated>
       <workItem from="1724524895678" duration="317000" />
       <workItem from="1724526093848" duration="220000" />
+      <workItem from="1724681244454" duration="81000" />
+      <workItem from="1724681502091" duration="192000" />
     </task>
     <servers />
   </component>
