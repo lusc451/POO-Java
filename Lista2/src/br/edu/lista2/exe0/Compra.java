@@ -52,6 +52,7 @@ public class Compra {
     public String getSituacao() {
         return situacao;
     }
+    
     @Override
     public String toString() {
         return "Compra{" +
