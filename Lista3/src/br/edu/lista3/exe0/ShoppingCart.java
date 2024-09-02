@@ -13,6 +13,8 @@ public class ShoppingCart {
     //composição
     private List<CarItem> carItens;
 
+
+
     public ShoppingCart() {
         this.carItens = new ArrayList<CarItem>(); //aloca espaço no vetor
     }
@@ -23,6 +25,7 @@ public class ShoppingCart {
         this.destino = destino;
         this.formaPagamento = formaPagamento;
         this.precoTotal = precoTotal;
+        this.carItens = new ArrayList<CarItem>();
     }
 
     public int getId() {

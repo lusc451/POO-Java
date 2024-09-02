@@ -24,7 +24,6 @@ public class Main {
         cart2.addCarItem(13, 10, prod3);
         cart2.calculateTotalPrice();
         System.out.println(cart2);
-        //teste
 
 
     }
