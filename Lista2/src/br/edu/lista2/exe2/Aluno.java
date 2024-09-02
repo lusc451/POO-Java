@@ -92,10 +92,21 @@ public class Aluno {
         System.out.println("A média final do aluno é: " + media);
     }
 
-    // Método para imprimir dados do aluno
+    // Método para imprimir dados do aluno (toString)
     public void dadosAluno() {
         System.out.println("Número do Aluno: " + numeroAluno);
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
+    }
+
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "numeroAluno=" + numeroAluno +
+                ", nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", p1=" + p1 +
+                ", p2=" + p2 +
+                '}';
     }
 }

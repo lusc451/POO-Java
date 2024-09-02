@@ -3,12 +3,12 @@ import br.edu.lista2.exe2.Aluno;
 
 public class MainAluno {
     public static void main(String[] args) {
-        // Aluno fornecendo os dados - APROVADO
+        // Aluno fornecendo os argumentos
         Aluno aluno1 = new Aluno(123456, "Lucas Antunes", 25, 7.5f, 8.0f);
         aluno1.dadosAluno();
         aluno1.notaFinal();
 
-        // Aluno sem fornecer dados
+        // Aluno sem argumentos fornecidos
         Aluno aluno2 = new Aluno();
         aluno2.dadosAluno();
         aluno2.notaFinal();
