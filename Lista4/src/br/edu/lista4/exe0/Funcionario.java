@@ -1,6 +1,6 @@
 package br.edu.lista4.exe0;
 
-public class Funcionario {
+public abstract class Funcionario {
     protected String nome, endereco, cpf;
     protected float  salario;
 
@@ -59,7 +59,5 @@ public class Funcionario {
                 ", salario=" + this.calculaSalario() +
                 '}';
     }
-    public float calculaSalario(){
-        return this.salario;
-    }
+    public abstract float calculaSalario();
 }
