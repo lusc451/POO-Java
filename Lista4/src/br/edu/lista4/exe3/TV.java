@@ -16,8 +16,8 @@ public class TV extends Produto{
         return "Estou assistindo o canal " + canal;
     }
 
-    public void trocaCanal(String canal) {
-        this.canal = canal;
+    public void trocaCanal(String novoCanal) {
+        this.canal = novoCanal;
     }
 
     @Override

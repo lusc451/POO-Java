@@ -5,17 +5,31 @@ import br.edu.lista4.exe3.Radio;
 import br.edu.lista4.exe3.TV;
 
 public class Controle {
+
+    //Método para testar o produto e imprimir o status
+    public static void testaProduto(Produto produto){
+        produto.testaUnidade();
+        System.out.println(produto.toString());
+    }
+
     public static void main(String[] args) {
-        Produto p1 = new Produto(1, 10);
-        p1.testaUnidade();
-        System.out.println(p1);
 
-        Produto p2 = new TV(2, 20, "Globo");
-        p2.testaUnidade();
-        System.out.println(p2);
+        Produto radio = new Radio(1, 10, "FM", "89.1");
+        Produto tv = new TV(2, 20, "Globo");
 
-        Produto p3 = new Radio(3, 30, "Jovem Pan", "89.1");
-        p3.testaUnidade();
-        System.out.println(p3);
+        //Testando os produtos (Radio e TV)
+        testaProduto(radio);
+        testaProduto(tv);
+
+        //Polimorfismo
+        ((Radio) radio).escutar();
+        ((Radio) radio).trocaEstacao("91.1");
+        ((Radio) radio).trocaBanda("AM");
+
+        ((TV) tv).assistir();
+        ((TV) tv).trocaCanal("SBT");
+
+
     }
 }
+

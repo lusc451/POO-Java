@@ -16,11 +16,6 @@ public class Produto {
     // Método testaUnidade - só pode ser executado uma vez
     public boolean testaUnidade() {
 
-        if (!statusTeste.equals("Não testado")) {
-            System.out.println("Produto já foi testado");
-            return false;
-        }
-
         double chance = Math.random(); // Gera um número de 0.0 a 1.0
 
         if (chance <= 0.9) { // 90% de chance de estar OK
