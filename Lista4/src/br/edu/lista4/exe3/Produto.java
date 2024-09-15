@@ -1,9 +1,9 @@
 package br.edu.lista4.exe3;
 
-public class Produto {
-    private int numeroSerial, volume;
-    private String statusTeste = "Não testado";
-    private boolean testado;
+public abstract class Produto {
+    protected int numeroSerial, volume;
+    protected String statusTeste = "Não testado";
+    protected boolean testado;
 
     public Produto() {
     }
