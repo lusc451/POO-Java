@@ -12,12 +12,13 @@ public class TV extends Produto{
         this.canal = canal;
     }
 
-    public String assistir() {
-        return "Estou assistindo o canal " + canal;
+    public void assistir() {
+        System.out.println("Estou assistindo o canal " + canal);
     }
 
-    public void trocaCanal(String novoCanal) {
-        this.canal = novoCanal;
+    public void trocaCanal(String canal) {
+        this.canal = canal;
+        System.out.println("Estou assistindo o canal " + canal);
     }
 
     @Override
