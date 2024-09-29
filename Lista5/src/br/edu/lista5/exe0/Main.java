@@ -1,4 +1,4 @@
-package br.edu.lista5;
+package br.edu.lista5.exe0;
 
 import br.edu.lista5.exe0.classes.Triatleta;
 import br.edu.lista5.exe0.interfaces.JogadorFutebol;
