@@ -1,4 +1,4 @@
-package br.edu.lista5;
+package br.edu.lista5.exe0.interfaces;
 
 public interface JogadorBasquete {
     public void arremessar();
