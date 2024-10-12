@@ -35,4 +35,10 @@ public class ProdutoController {
         return produtos.remove(id);
     }
 
+    @PatchMapping("/{id}")
+    public Produto updateProduto(@PathVariable Long id, @RequestBody Produto produto){
+        produto.setId(id);
+        return produtos.put(id, produto);
+    }
+
 }
