@@ -1,5 +1,6 @@
 package br.edu.fatecfranca.apibd.controller;
 
+import br.edu.fatecfranca.apibd.dto.UsuarioDTO;
 import br.edu.fatecfranca.apibd.model.Usuario;
 import br.edu.fatecfranca.apibd.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +29,33 @@ public class UsuarioController {
                 usuario.isPresent() ?
                         new ResponseEntity<>(usuario.get(), HttpStatus.OK) :
                         new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @PostMapping
+    public ResponseEntity<?> salvar(@RequestBody UsuarioDTO UsuarioDTO){
+        Usuario usuario = usuarioService.salva(UsuarioDTO);
+        return new ResponseEntity<>(usuario, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> deletar(@PathVariable Long id){
+        try{
+            usuarioService.excluir(id);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<?> atualizar(@PathVariable Long id, @RequestBody UsuarioDTO usuarioDTO){
+        try{
+            usuarioDTO.setId(id);
+            return new ResponseEntity<>(usuarioService.atualiza(usuarioDTO), HttpStatus.OK);
+        }
+        catch (IllegalArgumentException e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+        }
     }
 }
