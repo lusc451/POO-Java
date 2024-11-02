@@ -47,12 +47,17 @@ public class UsuarioService {
 
     //Atualiza um usuário
     public Usuario atualiza(UsuarioDTO usuario){
-        Usuario usuario1 = new Usuario();
-        usuario1.setNome(usuario.getNome());
-        usuario1.setPassword(usuario.getPassword());
-        usuario1.setUsername(usuario.getUsername());
-        usuario1.setId(usuario.getId());
+        if (usuarioRepository.existsById(usuario.getId())) {
+            Usuario usuario1 = new Usuario();
+            usuario1.setNome(usuario.getNome());
+            usuario1.setPassword(usuario.getPassword());
+            usuario1.setUsername(usuario.getUsername());
+            usuario1.setId(usuario.getId());
 
-        return usuarioRepository.save(usuario1);
+            return usuarioRepository.save(usuario1);
+        }
+        else {
+            throw new IllegalArgumentException("Usuário não encontrado ");
+        }
     }
 }
