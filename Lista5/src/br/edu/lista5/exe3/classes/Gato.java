@@ -1,4 +1,4 @@
-package br.edu.fatecfranca.lista5.ex3.classes;
+package br.edu.lista5.exe3.classes;
 
 public class Gato {
     public String nome;

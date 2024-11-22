@@ -1,6 +1,6 @@
-package br.edu.fatecfranca.lista5.ex3.classes;
+package br.edu.lista5.exe3.classes;
 
-import br.edu.fatecfranca.lista5.ex3.interfaces.Animal;
+import br.edu.lista5.exe3.interfaces.Animal;
 
 public class GatoAdapter implements Animal {
     

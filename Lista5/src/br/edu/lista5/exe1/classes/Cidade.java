@@ -1,9 +1,9 @@
-package br.edu.fatecfranca.lista5.ex1.classes;
+package br.edu.lista5.exe1.classes;
 
-import br.edu.fatecfranca.lista5.ex1.interfaces.Cidadao;
-import br.edu.fatecfranca.lista5.ex1.interfaces.Contribuinte;
-import br.edu.fatecfranca.lista5.ex1.interfaces.Empregado;
-import br.edu.fatecfranca.lista5.ex1.interfaces.Professor;
+import br.edu.lista5.exe1.interfaces.Cidadao;
+import br.edu.lista5.exe1.interfaces.Contribuinte;
+import br.edu.lista5.exe1.interfaces.Empregado;
+import br.edu.lista5.exe1.interfaces.Professor;
 
 public class Cidade {
     public String nome;
